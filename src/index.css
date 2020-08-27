@@ -138,7 +138,7 @@ html {
   animation: gradient 15s ease infinite;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
 
 @keyframes gradient {
@@ -159,7 +159,7 @@ html {
   font-weight: bold;
   color: white;
   font-size: 3em;
-  padding: 1em 0;
+  padding: 0.5em 0;
 }
 
 .landing-header p {
