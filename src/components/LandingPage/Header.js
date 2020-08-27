@@ -13,10 +13,24 @@ const Header = () => {
         <div className="landing-header">
           <h1>NICK HANSEN</h1>
           <p>Coder, Adventurer, and Your Future Developer</p>
-          <a href="#" class="fa fa-github"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-linkedin"></a>
+          <a href="https://github.com/Hansen-Nick" class="fa fa-github">
+            <span className="visually-hidden">Link to Github</span>
+          </a>
+          <a
+            href="https://www.facebook.com/nick.hansen.54738"
+            class="fa fa-twitter"
+          >
+            <span className="visually-hidden">Link to Facebook</span>
+          </a>
+          <a href="https://twitter.com/Hansen_Nick95" class="fa fa-facebook">
+            <span className="visually-hidden">Link to Twitter</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nicholas-hansen-55789717b/"
+            class="fa fa-linkedin"
+          >
+            <span className="visually-hidden">Link to LinkedIn</span>
+          </a>
         </div>
       </header>
       <div class="arrow bounce">
