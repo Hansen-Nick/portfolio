@@ -1,12 +1,9 @@
 import React from "react";
 import image from "../../images/profile (1).jpg";
-import Navigation from "../Navigation";
 
 const Header = () => {
   return (
     <div id="home" className="background-colors">
-      <Navigation />
-
       <img className="circular" alt="Profile" src={image} />
 
       <header className="landing-header-background">
