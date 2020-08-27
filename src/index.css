@@ -1,13 +1,366 @@
-body {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+.background-colors {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.landing-header {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: white;
+  font-size: 3em;
+  padding: 1em 0;
+}
+
+.landing-header p {
+  margin-top: 0.7em;
+  font-size: 0.5em;
+}
+
+.landing-header-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 1.5em 10em;
+  border-radius: 1rem;
+}
+
+.circular {
+  border-radius: 50%;
+  height: 15rem;
+  width: 15.5rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.fa-arrow-down {
+  color: white;
+}
+
+.arrow {
+  text-align: center;
+  margin: 3em 0;
+  color: white !important;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.visually-hidden:focus {
+  clip: auto;
+  height: auto;
+  overflow: auto;
+  position: absolute;
+  width: auto;
+}
+
+#about {
+  padding-top: 3em;
+  height: 100vh;
+  background-color: #23a6d5;
+  color: white;
+}
+
+.about-header {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.img-aboutInfo {
+  display: flex;
+  height: 60%;
+  justify-content: space-around;
+  margin-bottom: 2.5rem;
+}
+
+.about-img {
+  width: 30%;
+  border-radius: 3em;
+  margin: 4rem 0 0 4rem;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.about-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 4rem 4rem 0;
+  line-height: 1.3;
+  width: 50%;
+  background-color: white;
+  color: black;
+  filter: drop-shadow(5px 5px 5px #222);
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5em;
+  color: black;
+}
+
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  border-top: 0.1rem dashed white;
+  margin: 0 4rem;
+  padding-top: 1rem;
+}
+
+.tech-stack h1 {
+  font-size: 2rem;
+}
+
+.stack-list {
+  display: flex;
+  justify-content: center;
+}
+
+.stack-item {
+  margin: 1.5rem 2% !important;
+  background-color: white;
+  color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-item {
+  font-size: 1.5em;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#projects {
+  padding-top: 3em;
+  height: 100%;
+  background-color: #23a6d5;
+  border-top: 0.2rem dashed white;
+}
+
+.projects-header {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.card {
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.tidy-be-img {
+  height: 16.5em;
+}
+
+.cards {
+  align-content: center;
+}
+
+.card-centered {
+  margin: 7rem 4rem 0 4rem;
+  padding-bottom: 7rem;
+}
+
+.fa {
+  font-size: 60px;
+  color: white;
+  margin: 0.5rem 1.5rem;
 }
