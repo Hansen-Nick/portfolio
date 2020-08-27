@@ -179,7 +179,7 @@ html {
   width: 15.5rem;
   display: block;
   margin: 0 auto;
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 
 a {
@@ -192,7 +192,7 @@ a.fa-arrow-down {
 
 .arrow {
   text-align: center;
-  margin: 3em 0;
+  margin: 2em 0;
   color: white !important;
 }
 .bounce {
