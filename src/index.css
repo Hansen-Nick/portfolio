@@ -192,7 +192,7 @@ a.fa-arrow-down {
 
 .arrow {
   text-align: center;
-  margin: 2em 0;
+  margin: 1.5em 0;
   color: white !important;
 }
 .bounce {
@@ -362,5 +362,5 @@ a.fa-arrow-down {
 .fa {
   font-size: 60px;
   color: white;
-  margin: 0.5rem 1.5rem;
+  margin: 0.1rem 1.1rem;
 }
